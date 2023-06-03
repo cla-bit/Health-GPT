@@ -1,6 +1,5 @@
 import { useGlobalContext } from "../context";
 import "../styles/register.css";
-import Header from "./Header"
 
 const Signup = () => {
   const { setRegister } = useGlobalContext();
@@ -8,12 +7,12 @@ const Signup = () => {
   return (
     <>
       <main className="signup">
-        <Header header="Sign up"/>
-        {/* <h1>Sign in</h1> */}
         <form>
           <input type="text" placeholder="Username" />
-          <br/><input type="text" placeholder="Email address" />
-          <br/><select name="group" id="group">
+          <br />
+          <input type="text" placeholder="Email address" />
+          <br />
+          <select name="group" id="group">
             <option value="">Select Blood Group</option>
             <option value="">A+</option>
             <option value="">A-</option>
@@ -24,7 +23,8 @@ const Signup = () => {
             <option value="">AB+</option>
             <option value="">AB-</option>
           </select>
-          <br/><select name="geno" id="geno">
+          <br />
+          <select name="geno" id="geno">
             <option value="">Select Genotype</option>
             <option value="">AA</option>
             <option value="">AS</option>
@@ -32,9 +32,10 @@ const Signup = () => {
           </select>
           <br />
           <input type="password" placeholder="password" />
-          <br/><input type="password" placeholder="Confirm password" />
+          <br />
+          <input type="password" placeholder="Confirm password" />
           <button type="submit" className="signup-btn">
-            Sign in
+            Sign up
           </button>
           <span>
             Have an account already?

@@ -3,27 +3,27 @@ import { FaDisease } from "react-icons/fa";
 export const dashboardData = [
   {
     id: 1,
-    icon: <FaDisease />,
+    icon: "../images/Malaria.png",
     disease: "Malaria",
   },
   {
     id: 2,
-    icon: <FaDisease />,
+    icon: "../images/Asthma.png",
     disease: "Asthma",
   },
   {
     id: 3,
-    icon: <FaDisease />,
+    icon: "../images/Cancer.png",
     disease: "Cancer",
   },
   {
     id: 4,
-    icon: <FaDisease />,
+    icon: "../images/Ulcer.png",
     disease: "Ulcer",
   },
   {
     id: 5,
-    icon: <FaDisease />,
+    icon: "../images/Hypertension.png",
     disease: "Hyperthension",
   },
 ];

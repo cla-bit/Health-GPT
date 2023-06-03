@@ -43,7 +43,8 @@ select {
 }
 
 .login-btn,
-.signup-btn {
+.signup-btn,
+.disease-btn {
   background-color: var(--blue);
   border: none;
   width: 100%;
@@ -55,7 +56,8 @@ select {
   transition: ease 0.5s all;
 }
 .login-btn:hover,
-.signup-btn:hover {
+.signup-btn:hover,
+.disease-btn:hover {
   opacity: 0.8;
 }
 

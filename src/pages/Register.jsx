@@ -5,12 +5,7 @@ import { useGlobalContext } from "../context";
 const Register = () => {
   const { register, setRegister } = useGlobalContext();
 
-  return (
-    <>
-      {register ? <Signup /> : <Login />}
-      {/* {register && } */}
-    </>
-  );
+  return <>{register ? <Signup /> : <Login />}</>;
 };
 
 export default Register;

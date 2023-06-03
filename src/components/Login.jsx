@@ -25,7 +25,6 @@ const Login = () => {
   return (
     <>
       <main className="login">
-        <Header header="Sign in" />
         <form onSubmit={handleSubmit}>
           {showError && <p>Field cannot be empty</p>}
           <input
