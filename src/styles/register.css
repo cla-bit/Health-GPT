@@ -1,4 +1,5 @@
-.login, .signup {
+.login,
+.signup {
   text-align: center;
   /* height: 100vh; */
 }
@@ -10,14 +11,22 @@
   text-align: center;
 }
 
-.login form, .signup form {
+.login form,
+.signup form {
   /* border: 2px solid red; */
   margin-top: 6rem;
   width: 350px;
   margin-inline: auto;
 }
 
-.login form input, .signup form input, select {
+.login form p:first-child {
+  color: red;
+  text-align: center;
+}
+
+.login form input,
+.signup form input,
+select {
   width: 100%;
   font-size: var(--inputfont);
   padding: 15px;
@@ -33,28 +42,31 @@
   cursor: pointer;
 }
 
-.login-btn, .signup-btn {
+.login-btn,
+.signup-btn {
   background-color: var(--blue);
   border: none;
-  color: #fff;
   width: 100%;
+  color: #fff;
   padding-block: 15px;
   font-size: var(--inputfont);
   border-radius: 30px;
   margin-block: 3.5rem 1.5rem;
   transition: ease 0.5s all;
 }
-.login-btn:hover, .signup-btn:hover {
+.login-btn:hover,
+.signup-btn:hover {
   opacity: 0.8;
 }
 
-
-.login form span span, .signup form span span {
+.login form span span,
+.signup form span span {
   color: var(--blue);
   font-weight: var(--textweight);
   cursor: pointer;
   margin-inline: 5px;
 }
-.login form span span:hover, .signup form span span:hover {
+.login form span span:hover,
+.signup form span span:hover {
   text-decoration: underline;
 }

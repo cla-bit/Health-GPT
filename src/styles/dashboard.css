@@ -1,7 +1,27 @@
 .dashboard {
-    text-align: center;
+  text-align: center;
+  width: 350px;
+  margin-inline: auto;
+  margin-top: 6rem;
 }
 
 .dashboard h2 {
-    /* text-align:left; */
+  /* text-align:left; */
+}
+
+.disease-con {
+  border: 2px solid #000;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.disease-con p {
+  /* border: 2px solid red; */
+  width: 80%;
+  text-align: left;
+  margin-left: 20px;
 }
