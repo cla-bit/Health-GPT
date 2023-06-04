@@ -3,7 +3,7 @@ import Signup from "../components/Signup";
 import { useGlobalContext } from "../context";
 
 const Register = () => {
-  const { register, setRegister } = useGlobalContext();
+  const { register } = useGlobalContext();
 
   return <>{register ? <Signup /> : <Login />}</>;
 };

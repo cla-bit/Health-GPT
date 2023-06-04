@@ -1,7 +1,7 @@
+import axios from "axios";
 import { useState } from "react";
 import { useGlobalContext } from "../context";
 import "../styles/register.css";
-import Header from "./Header";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -10,15 +10,29 @@ const Login = () => {
   const { setRegister, email, setEmail, password, setPassword } =
     useGlobalContext();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email || !password) {
       setNextPage(false);
-      setShowError(true);
+      // setShowError(true);
       console.log("Cannot be empty");
     } else {
       setNextPage(true);
-      setShowError(false);
+      try {
+        const login = {
+          email: email,
+          password: password,
+        };
+        console.log(login);
+        const { data } = await axios.post(
+          "http://127.0.0.1:8000/api/login/",
+          login
+        );
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
+      // setShowError(false);
     }
   };
 
@@ -41,14 +55,13 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <p>forget password?</p>
-          {nextPage && (
+          {nextPage ? (
             <Link to="/dashboard">
               <button type="submit" className="login-btn">
                 Sign in
               </button>
             </Link>
-          )}
-          {!nextPage && (
+          ) : (
             <button type="submit" className="login-btn">
               Sign in
             </button>
