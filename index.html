@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="homepage">
+      <section class="logo">
+        <img src="../../images/IsabiGPT.png" alt="Our Logo" />
+      </section>
+
+      <!-- Login and Sign up Section -->
+      <main class="login-and-reg" style="display: none">
+        <div class="header">
+          <h1>Sign in</h1>
+        </div>
+        <!-- Login Section -->
+        <section class="login">
+          <form>
+            <!-- <p>Field cannot be empty</p> -->
+            <input type="email" placeholder="Email address" />
+            <br />
+            <input type="password" placeholder="password" />
+            <p>forget password?</p>
+            <button type="submit" class="login-btn">Sign in</button>
+            <br /><span>
+              Don't have an account?
+              <span>Sign up</span>
+            </span>
+          </form>
+        </section>
+        <!-- Sign Up Section -->
+        <section class="signup" style="display: none">
+          <form>
+            <input type="text" placeholder="Username" />
+            <br />
+            <input type="text" placeholder="Email address" />
+            <br />
+            <select name="group" id="group">
+              <option value="">Select Blood Group</option>
+              <option value="">A+</option>
+              <option value="">A-</option>
+              <option value="">B+</option>
+              <option value="">B-</option>
+              <option value="">O+</option>
+              <option value="">O-</option>
+              <option value="">AB+</option>
+              <option value="">AB-</option>
+            </select>
+            <br />
+            <select name="geno" id="geno">
+              <option value="">Select Genotype</option>
+              <option value="">AA</option>
+              <option value="">AS</option>
+              <option value="">SS</option>
+            </select>
+            <br />
+            <input type="password" placeholder="password" />
+            <br />
+            <input type="password" placeholder="Confirm password" />
+            <button type="submit" class="signup-btn">Sign up</button>
+            <span>
+              Have an account already?
+              <span>Sign in</span>
+            </span>
+          </form>
+        </section>
+      </main>
+    </main>
+
+    <!-- Script -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.disease {
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 350px;
+  margin-inline: auto;
+  margin-top: 6rem;
+}
+
+.disease h2 {
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: var(--gray);
+  padding: 10px;
+  font-size: 18px;
+}
