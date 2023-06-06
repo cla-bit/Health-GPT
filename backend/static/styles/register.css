@@ -7,14 +7,14 @@
 .header h1 {
   background-color: var(--blue);
   color: #fff;
-  padding-block: 15px;
+  padding-block: 10px;
   text-align: center;
 }
 
 .login form,
 .signup form {
   /* border: 2px solid red; */
-  margin-top: 6rem;
+  margin-top: 4rem;
   width: 350px;
   margin-inline: auto;
 }
@@ -61,15 +61,16 @@ select {
   opacity: 0.8;
 }
 
-.login form span span,
-.signup form span span {
+.login form span a,
+.signup form span a {
   color: var(--blue);
   font-weight: var(--textweight);
   cursor: pointer;
   margin-inline: 5px;
+  text-decoration: none;
 }
-.login form span span:hover,
-.signup form span span:hover {
+.login form span a:hover,
+.signup form span a:hover {
   text-decoration: underline;
 }
 

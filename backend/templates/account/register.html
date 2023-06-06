@@ -1,0 +1,31 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block account %}
+
+    <!-- Sign Up Section -->
+    <section class="signup" style="display: initial">
+        <form method="POST" action="{% url 'account:register' %}">
+            {% csrf_token %}
+            {% render_field form.username placeholder="username" class="form-control" %}
+            {{ form.username.errors }}
+            {% render_field form.email placeholder="email" class="form-control" %}
+            {{ form.email.errors }}
+            {% render_field form.blood_group placeholder="blood_group" class="form-control" %}
+            {{ form.blood_group.errors }}
+            {% render_field form.genotype placeholder="genotype" class="form-control" %}
+            {{ form.genotype.errors }}
+            {% render_field form.password1 placeholder="password1" class="form-control" %}
+            {{ form.password1.errors }}
+            {% render_field form.password2 placeholder="password2" class="form-control" %}
+            {{ form.password2.errors }}
+
+            <button type="submit" class="signup-btn">Sign up</button>
+            <span>Have an account already?
+                <a href="{% url 'account:login' %}">Sign in</a>
+            </span>
+        </form>
+    </section>
+
+
+{% endblock %}
